@@ -1,0 +1,121 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{res4} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\name{Xun Zhang} % Your name
+\address{GuangZhou \\ China - 510000} % Your address
+\address{(+86)~$\cdot$~18675508469 \\ janerikazhang@gmail.com} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf University of Glasgow} \hfill {\em Sep 2011 --- June 2013} \\ 
+ Honours 2:1 BSc - Computing Science\\
+Glasgow, UK\\
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+%Overall GPA: 5.678\\
+%2+2 Programme
+
+{\bf Sun Yat Sen University} \hfill {\em Sep 2009 --- June 2011} \\ 
+Guangzhou, China \\
+BSc - Computer Science and Technology\\
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+%Overall GPA: 5.678\\
+%2+2 Programme
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Open Source Project}
+
+\begin{rSubsection}{Adding Golang Support to Apprunner}{Oct 2016}{1 of 4 Contributors}{GitHub Project}
+\item Adding Golang support to Apprunner so that the App runner can automatically build, deploy, test, and run Go applications.
+\item https://github.com/janerikazhang/app-runner
+\end{rSubsection}
+\end{rSection}
+
+\begin{rSection}{University Projects}
+%------------------------------------------------
+
+\begin{rSubsection}{Scheduling Issues in the Emulation of Large Sensor Networks}{Sep 2012 - June 2013}{Final Year Project}{University of Glasgow, UK}
+\item Analyzed the performance of the schedulers (Credit, SEDF, BVT) in Xen and try to find a way to improve it so that it could suit the needs (with the accuracy of event delivery).
+\item Developed drivers to make Contiki, TinyOS and Mini-OS run above Xen hypervisor to prepare for the emulation of wireless sensor networks.
+\item Set time quantum and appropriate credits to domains in Xen to test the Credit scheduler performance
+\item Changed to use CGroups to do cpu pinning on dual core in order to obtain a better performance.
+\item https://bitbucket.org/janerikazhang
+\end{rSubsection}
+\end{rSection}
+
+\begin{rSection}{Work Experience}
+
+\begin{rSubsection}{Platform Engineering in Cash Foreign Exchange}{Oct 2013 - Present}{Software Engineer}{HSBC Software Develpement (GD) Limited, China}
+\item By rebuilding reverse-proxy, authentication and session management, I am helping re-architecturing the trading system into microserivces. Languange: Java
+\end{rSubsection}
+
+
+%------------------------------------------------
+
+\begin{rSubsection}{DNS Proxy of Home Network Project}{Jun 2012 - Aug 2012}{Summer Internship}{University of Glasgow, UK}
+\item Built an application above the OpenFlow controller named NOX to apply the rules from the Policy Engine and manage the low level flow in the home network. Languages: C/C++, Python
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Github Link} https://github.com/janerikazhang
+
+%\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+%Skillset & SPNEGO, HTTP(s), AngularJS, NodeJS, Jetty, Ratpack\\
+%Program Languages & C/C++, Java, Clojure, Haskell, Python, GoLang\\
+%Links & \\
+%\end{tabular}
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

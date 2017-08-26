@@ -1,0 +1,163 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae
+% LaTeX Template
+% Version 1.0 (18/7/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Stefano (http://stefano.italians.nl/)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% The main font used in this template, Adobe Garamond Pro, does not 
+% come with Windows by default. You will need to download it in
+% order to get an output as in the preview PDF. Otherwise, change this 
+% font to one that does come with Windows or comment out the font line 
+% to use the default LaTeX font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+
+\usepackage{scrpage2} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{fontspec} % Allows font customization
+
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Adobe Garamond Pro} % Main document font
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+
+\addtolength{\voffset}{-0.5in} % Adjust the vertical offset - less whitespace at the top of the page
+\addtolength{\textheight}{3cm} % Adjust the text height - less whitespace at the bottom of the page
+
+\newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
+
+%----------------------------------------------------------------------------------------
+% �FOOTER SECTION
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
+
+\cofoot{
+\addfontfeature{LetterSpace=20.0}\fontsize{12.5}{17}\selectfont % Letter spacing and font size
+
+25 Hillhead ST {\large\textperiodcentered} Glasgow {\large\textperiodcentered} UK G12 8PX\\ % Your mailing address
+{\Large\Letter} janerikazhang@gmail.com \ {\Large\Telefon} (+44) 7563231906 % Your email address and phone number
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center} % Center everything in the document
+
+%----------------------------------------------------------------------------------------
+% �HEADER SECTION
+%----------------------------------------------------------------------------------------
+
+{\addfontfeature{LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape Xun Zhang} % Your name at the top
+
+\vspace{1cm} % Extra whitespace after the large name at the top
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+\section{Objective}
+
+A position in the field of software engineering with special interests in Operating Systems, Networks and Embedded Systems.
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{June 2012 --- Aug 2012}\\
+\gray Employer & \textbf{Joseph Sventek} \hfill University of Glasgow, UK\\
+\gray Description & \textbf{Summer Internship - DNS Proxy of Home Network Project}\\
+\gray Languages & \textbf{Python, C++}\\
+\ & Developed a low level application in NOX handling DNS packets and other relating packets.  Learned Openflow, OpenvSwitch, NOX in this project
+\end{tabularx}
+
+%\vspace{12pt}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Research Experience}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{Sep 2012 ---  Present}\\
+\gray Supervisor & \textbf{Joseph Sventek} \hfill University of Glasgow, UK\\
+\gray Project & \textbf{Xen(R) Scheduler Supporting Emulation of Large Sensor Networks}\\
+\gray Languages & \textbf{C}\\
+\ & Implement a custom scheduler for Xen. Need deep understanding in Xen, Mini-OS, Contiki and TinyOS.
+\end{tabularx}
+
+%\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{Sep 2011 ---  May 2012}\\
+\gray Supervisor & \textbf{Jeremy Singer} \hfill University of Glasgow, UK\\
+\gray Project & \textbf{Wiki Workshop}\\
+\gray Languages & \textbf{PHP, Python, JavaScript, CSS, HTML}\\
+\ & Developed a web app of academic event management system. I am the secretary, quality assuror and tester in my team.
+\end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{Sep 2011 --- June 2013}\\
+\gray Degree & \textbf{BSc Honors Degree in Computing Science -- June 2013}\\
+%\gray Rank & \textbf{First Class Honours}\\
+\gray University & \textbf{The University of Glasgow} \hfill Glasgow, UK\\
+%\gray Programme & \textbf{ 2+2 Programme}
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Period & \textbf{Sep 2009 --- June 2011}\\
+%\gray Degree & \textbf{Bachelor of Science in Computer Science and Technology -- June 2013}\\
+%\gray Rank & \textbf{With Distinction}\\
+\gray University & \textbf{Sun Yat Sen University} \hfill Guangzhou, China\\
+%\gray Programme & \textbf{ 2+2 Programme}
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Computer Languages & C/C++, Haskell, Algol, Java, Python, Basic, php \\
+Protocols \& APIs & XML, JSON, SOAP, TCP/IP, DNS, RPC, RMI \\
+Databases & MySQL \\
+Tools & SVN, Vim, Emacs, LaTeX
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+\end{center}
+
+\end{document}
